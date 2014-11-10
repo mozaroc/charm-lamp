@@ -1,0 +1,20 @@
+#!/bin/bash -ex
+
+#create directories to store mysql configuration and delete any reused files from previous units.
+
+mkdir  /var/www/html
+chown -R www-data:www-data /var/www/html
+
+juju-log "Installing packages"
+
+apt-get update -qq
+apt-get install -y apache2 php5 mysql-client php5-mysql php5-mcrypt  ucf debconf-utils
+
+# Configure apache
+juju-log "Enabling apache modules: rewrite, vhost_alias, php5"
+
+a2enmod rewrite vhost_alias php5
+
+#opening port 80
+juju-log "Exposing apache2 service"
+open-port 80/tcp
