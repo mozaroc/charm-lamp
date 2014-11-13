@@ -22,6 +22,4 @@ service apache2 restart
 #opening port 80
 juju-log "Exposing apache2 service"
 
-relation-set port=80 hostname=`hostname -f`
-
 open-port 80/tcp
