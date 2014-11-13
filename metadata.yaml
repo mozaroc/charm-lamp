@@ -1,4 +1,4 @@
-name: LAMP
+name: lamp
 summary: "Apache2 + PHP5"
 maintainer: Vasiliy Tolstov <v.tolstov@selfip.ru>
 description: |
