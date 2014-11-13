@@ -2,7 +2,7 @@
 
 #create directories to store mysql configuration and delete any reused files from previous units.
 
-mkdir  /var/www/html
+mkdir -p  /var/www/html
 chown -R www-data:www-data /var/www/html
 
 juju-log "Installing packages"
