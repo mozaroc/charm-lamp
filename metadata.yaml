@@ -4,6 +4,5 @@ maintainer: Vasiliy Tolstov <v.tolstov@selfip.ru>
 description: |
  This will install Apache2 and PHP5.
 categories: ["applications"]
-requires:
-  db:
-    interface: mysql
+provides:
+  website: http
