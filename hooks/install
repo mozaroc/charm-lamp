@@ -8,7 +8,7 @@ chown -R www-data:www-data /var/www/html
 juju-log "Installing packages"
 
 apt-get update -qq
-apt-get -y install --no-install-suggests --no-install-recommends  apache2 php5-gd libapache2-mod-php5 mysql-client-core-5.5 php5-mysql pwgen
+apt-get -y install --no-install-suggests --no-install-recommends  apache2 php5-gd libapache2-mod-php5 mysql-client-core-5.5 php5-mysql pwgen php5 mysql-client php5-mysql php5-mcrypt ttf-dejavu-core ucf debconf-utils
 
 # Configure apache
 juju-log "Enabling apache modules: rewrite, vhost_alias, php5"
