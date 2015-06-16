@@ -15,7 +15,6 @@ juju-log "Enabling apache modules: rewrite, vhost_alias, php5"
 
 a2enmod rewrite vhost_alias
 a2enmod php5 headers
-a2dissite 000-default
 
 service apache2 restart
 
